@@ -4,8 +4,50 @@ h1{color:grey;font-family:verdana;}
 .maindiv {
     background-color:white;
     color:black;
-    width: 300px;
+    width: 400px;
     padding: 20px;
     border-radius: 25px;
     align: center;
+}
+input[type=number], select{ 
+  padding: 2px;
+  border: 5px solid #ccc;
+  margin: 10px 0px 5px 40px;
+  border-radius: 4px;
+  resize: vertical;
+}
+button{
+    margin: 15px 0px 5px 5px;
+    align:center
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
