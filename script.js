@@ -10,7 +10,7 @@ function compute()
     var interest = principal * years * rate / 100;
     var year = new Date().getFullYear()+parseInt(years);
     var amount = principal + interest;
-    document.getElementById("result").innerHTML="\<br\>If you deposit \<b\>"+principal+"\</b\>,\<br\>at an interest rate of \<b\>"+rate+"%\</b\>\<br\>You will receive an amount of \<b\>"+interest+"\</b\>,\<br\>in the year \<b\>"+year+"\</b\>\<br\>."
+    document.getElementById("result").innerHTML="\<br\>If you deposit \<span id='by'\>"+principal+"\</span\>,\<br\>at an interest rate of \<span id='by'\>"+rate+"%\</span\>\<br\>You will receive an amount of \<span id='by'\>"+interest+"\</span\>,\<br\>in the year \<span id='by'\>"+year+"\</span\>\<br\>."
 }
         
 /*--- This function helps the scoll bar update real time selection 

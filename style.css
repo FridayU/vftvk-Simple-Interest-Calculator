@@ -9,6 +9,10 @@ h1{color:grey;font-family:verdana;}
     border-radius: 25px;
     align: center;
 }
+#by {
+    background-color: yellow;
+    font-weight: 800px;
+}
 input[type=number], select{ 
   padding: 2px;
   border: 5px solid #ccc;
